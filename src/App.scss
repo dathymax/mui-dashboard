@@ -1,0 +1,21 @@
+.header {
+    &__logo {
+        width: 128px;
+        height: 50px;
+        object-fit: cover;
+    }
+    &__name {
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px;
+    border: none;
+}

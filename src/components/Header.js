@@ -1,5 +1,5 @@
-import { Circle, ExpandLess, ExpandMore } from '@mui/icons-material'
-import { AppBar, Collapse, Divider, Grid, IconButton, List, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Menu, Toolbar, Tooltip } from '@mui/material'
+import { ExpandLess, ExpandMore } from '@mui/icons-material'
+import { AppBar, Collapse, Divider, Grid, IconButton, List, ListItemButton, ListItemIcon, ListItemText, Menu, Toolbar, Tooltip } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
@@ -10,7 +10,8 @@ const useStyles = makeStyles({
         boxShadow: 'none !important',
     },
     headerRight: {
-        lineHeight: '25px',
+        paddingTop: 7,
+        lineHeight: '20px',
         textAlign: 'right',
     },
     colorItem: {
@@ -53,7 +54,7 @@ const Header = () => {
             <AppBar position="static" className={classes.headerAppbar}>
                 <Toolbar>
                     <Grid container>
-                        <Grid item sm={2}>
+                        <Grid style={{ paddingTop: 10}} item sm={2}>
                             <img src="./logo/logo.png" alt="" className="header__logo"/>
                         </Grid>
                         <Grid item sm={8}>

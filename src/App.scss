@@ -1,0 +1,60 @@
+.header {
+    &__logo {
+        width: 128px;
+        height: 50px;
+        object-fit: cover;
+    }
+    &__name {
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px;
+    border: none;
+}
+
+.content {
+    padding: 50px;
+    flex: 6;
+    background: #f9fbfd;
+}
+
+.create-container {
+    background: #fff;
+    border: 1px solid #edf2f9;
+    border-radius: 5px;
+}
+
+.create-header {
+    padding: 30px;
+}
+
+.create-form {
+    padding: 30px 50px;
+}
+
+.create-required {
+    color: red;
+}
+
+.form-input {
+    padding: 20px;
+    input[type="text"], input[type="password"], input[type="email"] {
+        padding: 10px;
+        width: 350px;
+        &::before {
+            border-bottom: none;
+        }
+    }
+    .checkbox {
+        display: flex;
+        flex-direction: column;
+    }
+}

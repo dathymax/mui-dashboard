@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 
 const useStyles = makeStyles({
     headerAppbar: {
-        backgroundColor: '#7c0340 !important',
+        backgroundColor: 'var(--primary-color) !important',
         boxShadow: 'none !important',
     },
     headerRight: {
@@ -25,8 +25,7 @@ const useStyles = makeStyles({
     },
 })
 
-const colors = ['red', 'blue', 'green', 'yellow']
-
+const colors = ['#f44336', '#e91e63', '#9c27b0', '#ff8a80','#673ab7','#3f51b5','#2196f3','#009688','#00bcd4']
 const Header = () => {
     
     const classes = useStyles()
@@ -48,6 +47,12 @@ const Header = () => {
     const handleClose = () => {
         setAnchorEl(null);
     };
+
+    const handleChangeTheme = (e) => {
+        const color = e.target.dataset.theme;
+        document.documentElement.style.setProperty('--primary-color',color);
+        localStorage.setItem('primary-color',JSON.stringify(color));
+    }
 
     return (
         <div className="header">
@@ -81,7 +86,7 @@ const Header = () => {
                                 >
                                     <ListItemButton onClick={handleClickShowMenuTheme}>
                                         <ListItemIcon>
-                                            <button className="color"></button>
+                                            <button style={{backgroundColor: 'var(--primary-color)'}} className="color"></button>
                                         </ListItemIcon>
                                         <ListItemText primary="Change theme" />
                                         {show ? <ExpandLess /> : <ExpandMore />}
@@ -89,8 +94,8 @@ const Header = () => {
                                     <Divider/>
                                     <Collapse className={classes.collapse} in={show} timeout="auto" unmountOnExit>
                                         <List component="div" disablePadding>
-                                            {colors.map(color => (
-                                                <button className="color" style={{backgroundColor: color}}></button>
+                                            {colors.map((color,index) => (
+                                                <button key={index}  onClick={handleChangeTheme} data-theme={color} className="color" style={{backgroundColor: color}}></button>
                                             ))}
                                         </List>
                                     </Collapse>

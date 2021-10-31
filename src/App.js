@@ -9,10 +9,18 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import { useEffect } from 'react';
 
 function App() {
     const classes = useStyles()
+    useEffect(()=>{
+        const colorRaw = localStorage.getItem('primary-color');
+        if(colorRaw) {
+            const color = JSON.parse(colorRaw);
+            document.documentElement.style.setProperty('--primary-color',color);
+        }
 
+    },[])
     return (
         <Router>
             <div className="app">

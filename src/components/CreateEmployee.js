@@ -20,78 +20,78 @@ const CreateEmployee = () => {
             <div className="create-header">
                 Thong tin tai khoan
             </div>
-            <Divider/>
+            <Divider />
             <form action="" className="create-form">
                 <div className="form-input">
-                    <Grid container spacing={2} style={{alignItems: 'center'}}>
+                    <Grid container spacing={2} style={{ alignItems: 'center' }}>
                         <Grid xs={1}>
                             <Typography variant="span" component="span">
-                                    <span className="create-required">*</span> Ho va ten:
-                                </Typography>
+                                <span className="create-required">*</span> Ho va ten:
+                            </Typography>
                         </Grid>
                         <Grid xs={3}>
-                            <TextField required placeholder="Nhap ho ten"/>
+                            <TextField required placeholder="Nhap ho ten" />
                         </Grid>
                     </Grid>
                 </div>
                 <div className="form-input">
-                    <Grid container spacing={2} style={{alignItems: 'center'}}>
+                    <Grid container spacing={2} style={{ alignItems: 'center' }}>
                         <Grid xs={1}>
                             <Typography variant="span" component="span">
                                 <span className="create-required">*</span> E-mail:
                             </Typography>
                         </Grid>
                         <Grid xs={3}>
-                            <TextField required placeholder="Nhap Email"/>
+                            <TextField required placeholder="Nhap Email" />
                         </Grid>
                     </Grid>
                 </div>
                 <div className="form-input">
-                    <Grid container spacing={2} style={{alignItems: 'center'}}>
+                    <Grid container spacing={2} style={{ alignItems: 'center' }}>
                         <Grid xs={1}>
                             <Typography variant="span" component="span">
                                 <span className="create-required">*</span> Username:
                             </Typography>
                         </Grid>
                         <Grid xs={3}>
-                            <TextField required placeholder="Nhap Username"/>
+                            <TextField required placeholder="Nhap Username" />
                         </Grid>
                     </Grid>
                 </div>
                 <div className="form-input">
-                <Grid container spacing={2} style={{alignItems: 'center'}}>
+                    <Grid container spacing={2} style={{ alignItems: 'center' }}>
                         <Grid xs={1}>
                             <Typography variant="span" component="span">
-                                    <span className="create-required">*</span> Password:
-                                </Typography>
+                                <span className="create-required">*</span> Password:
+                            </Typography>
                         </Grid>
                         <Grid xs={3}>
-                            <TextField type="password" required placeholder="Nhap mat khau"/>
+                            <TextField type="password" required placeholder="Nhap mat khau" />
                         </Grid>
                     </Grid>
                 </div>
                 <div className="form-input">
-                <Grid container spacing={2} style={{alignItems: 'center'}}>
+                    <Grid container spacing={2} style={{ alignItems: 'center' }}>
                         <Grid xs={1}>
                             <Typography variant="span" component="span">
-                                    <span className="create-required">*</span> Phone:
-                                </Typography>
+                                <span className="create-required">*</span> Phone:
+                            </Typography>
                         </Grid>
                         <Grid xs={3}>
-                            <TextField required placeholder="Nhap so dien thoai"/>
+                            <TextField required placeholder="Nhap so dien thoai" />
                         </Grid>
                     </Grid>
                 </div>
                 <div className="form-input">
-                <Grid container spacing={2} style={{alignItems: 'center'}}>
+                    <Grid container spacing={2} style={{ alignItems: 'center' }}>
                         <Grid xs={1}>
                             <Typography variant="span" component="span">
-                                    <span className="create-required">*</span> Phong ban:
-                                </Typography>
+                                <span className="create-required">*</span> Phong ban:
+                            </Typography>
                         </Grid>
                         <Grid xs={3}>
                             <Select
-                                style={{width: 360}}
+                                style={{ width: 360 }}
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
                                 value={department}
@@ -104,15 +104,15 @@ const CreateEmployee = () => {
                     </Grid>
                 </div>
                 <div className="form-input">
-                <Grid container spacing={2} style={{alignItems: 'center'}}>
+                    <Grid container spacing={2} style={{ alignItems: 'center' }}>
                         <Grid xs={1}>
                             <Typography variant="span" component="span">
-                                    <span className="create-required">*</span> Chuc vu:
-                                </Typography>
+                                <span className="create-required">*</span> Chuc vu:
+                            </Typography>
                         </Grid>
                         <Grid xs={3}>
                             <Select
-                                style={{width: 360}}
+                                style={{ width: 360 }}
                                 value={role}
                                 onChange={handleChangeRole}
                             >
@@ -123,11 +123,11 @@ const CreateEmployee = () => {
                     </Grid>
                 </div>
                 <div className="form-input">
-                    <Grid container spacing={2} style={{alignItems: 'flex-start'}}>
+                    <Grid container spacing={2} style={{ alignItems: 'flex-start' }}>
                         <Grid xs={1}>
                             <Typography variant="span" component="span">
-                                    <span className="create-required">*</span> Phan quyen:
-                                </Typography>
+                                <span className="create-required">*</span> Phan quyen:
+                            </Typography>
                         </Grid>
                         <Grid xs={1}>
                             <div className="checkbox">

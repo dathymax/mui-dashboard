@@ -12,10 +12,10 @@ const Content = () => {
     return (
         <div style={{ height: 400, width: '100%' }}>
             <Switch>
-              <Route exact path="/list">
+              <Route exact path="/mui-dashboard/list">
                 <ListEmployee/>
               </Route>
-              <Route path="/create">
+              <Route path="/mui-dashboard/create">
                 <CreateEmployee />
               </Route>
             </Switch>

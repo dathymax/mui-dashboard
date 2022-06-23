@@ -65,7 +65,7 @@ const Header = () => {
                             <Box sx={{ position: 'relative' }}>
                                 <Tooltip title="Account settings">
                                     <IconButton onClick={handleClick} size="small" sx={{ ml: 2 }}>
-                                        <div className="header__name">Long ML</div>
+                                        <div className="header__name">Do Tuan Dat</div>
                                     </IconButton>
                                 </Tooltip>
                             </Box>
